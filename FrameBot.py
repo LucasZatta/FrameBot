@@ -37,7 +37,7 @@ def post_frame():
 
     api.update_with_media(name)  #this will post the image we saved on the twitter account
 
-    os.remove(name) #then, after its posted, the algorithm removes it to avoid convolution
+    os.remove(name) #then, after its posted, the algorithm removes it to avoid unnecessary memory use.
 
     cap.release()
     cv2.destroyAllWindows()
